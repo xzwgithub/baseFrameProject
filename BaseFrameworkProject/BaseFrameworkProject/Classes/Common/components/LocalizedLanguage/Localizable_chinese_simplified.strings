@@ -1,0 +1,53 @@
+/*
+ Localizable.strings
+ UCClient
+ 
+ //  Created by chewyong on 15/12/18.
+ Copyright (c) 2015年 isoftstone. All rights reserved.
+ */
+
+/***********************[begin] 控制器名 ************************/
+"vc_name_home" = "首页";
+"vc_name_goods_source" = "货源";
+"vc_name_will_order" = "物流方案";
+"vc_name_order" = "订单";
+"vc_name_mine" = "我";
+/***********************[end] 控制器名 ************************/
+
+
+/***********************[begin] LoginViewController ************************/
+"login_phone_format_error" = "手机号码格式不正确";
+"login_pwd_format_error" = "密码格式不正确";
+"login_user_name_format_error" = "登录名格式不正确";
+"login_company_name_format_error" = "公司名称格式不正确";
+
+"login_phone_nil" = "手机号码不能为空";
+"login_pwd_nil" = "密码不能为空";
+"login_user_name_nil" = "登录名不能为空";
+"login_company_name_nil" = "公司名称不能为空";
+/***********************[end] 控制器名 ************************/
+
+
+/***********************[begin] MineViewController ************************/
+"mine_point_format" = "当前积分：";
+/***********************[end] 控制器名 ************************/
+
+
+/************************[begin] 日期组件 *************************/
+
+"NSDateCategory.text1" = "1分钟内";
+"NSDateCategory.text2" = "%.f分钟前";
+"NSDateCategory.text3" = "%.f小时前";
+"NSDateCategory.text4" = "%.f天前";
+"NSDateCategory.text5" = "M月d日";
+"NSDateCategory.text6" = "%.f年前";
+"NSDateCategory.text7" = "昨天 %@";
+"NSDateCategory.text8" = "昨天HH:mm";
+"NSDateCategory.text9" = "凌晨hh:mm";
+"NSDateCategory.text10" = "上午hh:mm";
+"NSDateCategory.text11" = "下午hh:mm";
+"NSDateCategory.text12" = "晚上hh:mm";
+"NSDateCategory.text13" = "昨天HH:mm";
+"NSDateCategory.text14" = "今天 %@";
+/************************[end] 日期组件 *************************/
+

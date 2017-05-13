@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BaseFrameworkProject' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for BaseFrameworkProject
+  
+  pod 'AFNetworking', '~> 3.1.0'#网络
+  pod 'YYModel', '~> 0.9.8'#实体序列化
+  pod 'MBProgressHUD', '~> 0.9.1'#HUD
+  pod 'MJRefresh', '~> 2.4.12'#刷新控件
+  pod 'FMDB', '~> 2.5'#数据库
+  pod 'YTKKeyValueStore', '~> 0.1.2'#存储
+  pod 'BaiduMapKit', '~> 3.1.0' #百度地图SDK
+  pod 'libqrencode', '~> 3.4.2'#二维码
+  pod 'SDWebImage', '~> 3.7.2'
+  pod 'GTSDK', '1.5.0'#个推
+  pod 'IQKeyboardManager', '~> 3.2.4'#键盘
+  pod 'RegexKitLite', '~> 4.0'#正则
+  
+  
+
+  target 'BaseFrameworkProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BaseFrameworkProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

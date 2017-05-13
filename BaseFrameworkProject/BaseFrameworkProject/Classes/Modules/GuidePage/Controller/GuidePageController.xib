@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidePageController">
+            <connections>
+                <outlet property="scrollView" destination="dDe-z1-Dg2" id="QgZ-R6-eLj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDe-z1-Dg2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_1" translatesAutoresizingMaskIntoConstraints="NO" id="jjv-cd-8bw" userLabel="guide1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_2" translatesAutoresizingMaskIntoConstraints="NO" id="FlJ-dV-7Le" userLabel="guide2">
+                            <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_3" translatesAutoresizingMaskIntoConstraints="NO" id="1IS-A6-bgP" userLabel="guide3">
+                            <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzS-fK-vNd">
+                            <rect key="frame" x="869" y="542" width="137" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="9SA-L7-xcf"/>
+                                <constraint firstAttribute="width" constant="137" id="qAL-iR-rct"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="launch_btn_sure"/>
+                            <connections>
+                                <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="Y7a-te-Eo7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="FlJ-dV-7Le" firstAttribute="height" secondItem="jjv-cd-8bw" secondAttribute="height" id="1Kj-EX-2t3"/>
+                        <constraint firstItem="jjv-cd-8bw" firstAttribute="leading" secondItem="dDe-z1-Dg2" secondAttribute="leading" id="7vI-82-Dow"/>
+                        <constraint firstItem="FlJ-dV-7Le" firstAttribute="width" secondItem="jjv-cd-8bw" secondAttribute="width" id="Eip-Rg-NZX"/>
+                        <constraint firstItem="1IS-A6-bgP" firstAttribute="leading" secondItem="FlJ-dV-7Le" secondAttribute="trailing" id="KWK-md-c37"/>
+                        <constraint firstItem="FlJ-dV-7Le" firstAttribute="leading" secondItem="jjv-cd-8bw" secondAttribute="trailing" id="Oew-Gw-iID"/>
+                        <constraint firstAttribute="trailing" secondItem="jjv-cd-8bw" secondAttribute="trailing" id="QHl-WW-LSt"/>
+                        <constraint firstAttribute="bottom" secondItem="jjv-cd-8bw" secondAttribute="bottom" id="UzE-yu-hQy"/>
+                        <constraint firstItem="1IS-A6-bgP" firstAttribute="width" secondItem="jjv-cd-8bw" secondAttribute="width" id="WSS-bJ-bQs"/>
+                        <constraint firstItem="FlJ-dV-7Le" firstAttribute="centerY" secondItem="jjv-cd-8bw" secondAttribute="centerY" id="XPz-Yi-vR4"/>
+                        <constraint firstItem="1IS-A6-bgP" firstAttribute="height" secondItem="jjv-cd-8bw" secondAttribute="height" id="YB0-l5-wkv"/>
+                        <constraint firstItem="1IS-A6-bgP" firstAttribute="centerY" secondItem="FlJ-dV-7Le" secondAttribute="centerY" id="aWQ-ZF-hxk"/>
+                        <constraint firstItem="nzS-fK-vNd" firstAttribute="centerX" secondItem="1IS-A6-bgP" secondAttribute="centerX" id="gWl-DT-Ewr"/>
+                        <constraint firstItem="jjv-cd-8bw" firstAttribute="top" secondItem="dDe-z1-Dg2" secondAttribute="top" id="iZh-im-rur"/>
+                        <constraint firstAttribute="bottom" secondItem="nzS-fK-vNd" secondAttribute="bottom" constant="88" id="kYf-pk-nYU"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dDe-z1-Dg2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KwK-9F-URD"/>
+                <constraint firstItem="jjv-cd-8bw" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="MWU-1n-q1g"/>
+                <constraint firstAttribute="bottom" secondItem="dDe-z1-Dg2" secondAttribute="bottom" id="OIJ-ZN-wch"/>
+                <constraint firstItem="dDe-z1-Dg2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZeI-Ub-YNS"/>
+                <constraint firstAttribute="trailing" secondItem="dDe-z1-Dg2" secondAttribute="trailing" id="c2y-mT-1sK"/>
+                <constraint firstItem="jjv-cd-8bw" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="kgp-xG-C0q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch_1" width="414" height="736"/>
+        <image name="launch_2" width="414" height="736"/>
+        <image name="launch_3" width="414" height="736"/>
+        <image name="launch_btn_sure" width="137" height="37"/>
+    </resources>
+</document>

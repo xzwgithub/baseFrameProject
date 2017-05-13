@@ -1,0 +1,64 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.1.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GTSDK (1.5.0)
+  - IQKeyboardManager (3.2.4)
+  - libqrencode (3.4.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (2.4.12)
+  - RegexKitLite (4.0)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
+  - YYModel (0.9.12)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BaiduMapKit (~> 3.1.0)
+  - FMDB (~> 2.5)
+  - GTSDK (= 1.5.0)
+  - IQKeyboardManager (~> 3.2.4)
+  - libqrencode (~> 3.4.2)
+  - MBProgressHUD (~> 0.9.1)
+  - MJRefresh (~> 2.4.12)
+  - RegexKitLite (~> 4.0)
+  - SDWebImage (~> 3.7.2)
+  - YTKKeyValueStore (~> 0.1.2)
+  - YYModel (~> 0.9.8)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GTSDK: 4380de452178d8ba2a67189f10c6743d0f9536b9
+  IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
+  YYModel: 33a27f41a995f4c36ff8178421bac9f221a9c7ea
+
+PODFILE CHECKSUM: 0b9472c687ac9aa926c1e5cb0f851850b2edb463
+
+COCOAPODS: 1.1.1

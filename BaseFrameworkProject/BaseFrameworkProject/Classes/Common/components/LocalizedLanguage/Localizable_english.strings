@@ -1,0 +1,33 @@
+/*
+ Localizable.strings
+ UCClient
+ 
+ //  Created by chewyong on 15/12/18.
+ Copyright (c) 2015年 isoftstone. All rights reserved.
+ */
+
+/***********************[begin] 控制器名 ************************/
+"vc_name_home" = "Home";
+"vc_name_goods_source" = "GoodsSource";
+"vc_name_will_order" = "WillOrder";
+"vc_name_order" = "Order";
+"vc_name_mine" = "Mine";
+/***********************[end] 控制器名 ************************/
+
+/************************[begin] 日期组件 *************************/
+"NSDateCategory.text1" = "one minute";
+"NSDateCategory.text2" = "%.f minutes ago";
+"NSDateCategory.text3" = "%.f hours ago";
+"NSDateCategory.text4" = "%.f days ago";
+"NSDateCategory.text5" = "M-d";
+"NSDateCategory.text6" = "%.f years ago";
+"NSDateCategory.text7" = "M-d %@";
+"NSDateCategory.text8" = "M-d HH:mm";
+"NSDateCategory.text9" = "aa hh:mm";
+"NSDateCategory.text10" = "aa hh:mm";
+"NSDateCategory.text11" = "aa hh:mm";
+"NSDateCategory.text12" = "aa hh:mm";
+"NSDateCategory.text13" = "M-d HH:mm";
+"NSDateCategory.text14" = "today %@";
+/************************[end] 日期组件 *************************/
+

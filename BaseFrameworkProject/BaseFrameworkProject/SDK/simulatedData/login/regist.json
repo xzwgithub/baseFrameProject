@@ -1,0 +1,11 @@
+{
+    "rcode":0,
+    "resultMsg":"注册成功" ,
+    "data":
+    {
+        "id": 1,
+        "loginToken":"DKKD03203400432",
+        "userName":"15888888888",
+        "mobilePhone":"15888888888",
+    }
+}
