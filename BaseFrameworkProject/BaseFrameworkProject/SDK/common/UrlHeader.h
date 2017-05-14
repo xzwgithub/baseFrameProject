@@ -17,23 +17,30 @@
 #define kGtAppSecret      @"1dCkAdC9uU5ePALiKAuVj2"
 #define IP_PORT @"http://shipper.sxyunju.com"
 
-#elif (BUILD_VERSION == 1) //新开发环境
-#define kGtAppId           @"Si7u8OdQgA6VV4ZAE1vrH1"
-#define kGtAppKey          @"wD2rytbqsd8TAeFtcKWyo5"
-#define kGtAppSecret       @"aRcJvmJc5A9dqEV2QngSO5"
-#define IP_PORT @"http://180.76.161.252:8220"
+#elif (BUILD_VERSION == 1) //百度开发新
+#define kGtAppId           @"vRiQ6OOhzk9gyWWxpE0oL8"
+#define kGtAppKey          @"7LBVmOUoWS8ddidSvchN26"
+#define kGtAppSecret       @"vhihO8btlT8ddhmMMUpsm9"
+#define IP_PORT @"http://180.76.143.51:8090"
 
 #endif
 
 
-#define DROOTURL  IP_PORT@"/shipper/mvc"//货主
+#define DROOTURL  IP_PORT@"/driver/mvc"//货主
 
 
 /*******************首页**********************/
 /**
-  * 例如
+ *  3.1.1 登录
+ *  username 用户名/手机号码/企业名称 password 密码，使用MD5加密
  */
-#define HOME_GET_CAROUSEL_ADLIST DROOTURL@"/adsposition/getCarouselAdList.json"
+#define DURL_LOGIN_LOGIN DROOTURL@"/login/api/dlogin/login.json"
+
+/**
+ *  3.1.1 注销
+ *  loginToken 登录成功令牌
+ */
+#define DURL_LOGIN_LOGOUT DROOTURL@"/logout/api/dlogout/logout.json"
 
 
 

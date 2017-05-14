@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,7 +34,7 @@
                             <rect key="frame" x="750" y="0.0" width="375" height="667"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzS-fK-vNd">
-                            <rect key="frame" x="869" y="542" width="137" height="37"/>
+                            <rect key="frame" x="869" y="544.5" width="137" height="37"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="37" id="9SA-L7-xcf"/>
                                 <constraint firstAttribute="width" constant="137" id="qAL-iR-rct"/>
@@ -53,12 +54,12 @@
                         <constraint firstAttribute="trailing" secondItem="jjv-cd-8bw" secondAttribute="trailing" id="QHl-WW-LSt"/>
                         <constraint firstAttribute="bottom" secondItem="jjv-cd-8bw" secondAttribute="bottom" id="UzE-yu-hQy"/>
                         <constraint firstItem="1IS-A6-bgP" firstAttribute="width" secondItem="jjv-cd-8bw" secondAttribute="width" id="WSS-bJ-bQs"/>
+                        <constraint firstItem="nzS-fK-vNd" firstAttribute="centerY" secondItem="1IS-A6-bgP" secondAttribute="centerY" multiplier="13:7.7" id="X5a-Qt-L7R"/>
                         <constraint firstItem="FlJ-dV-7Le" firstAttribute="centerY" secondItem="jjv-cd-8bw" secondAttribute="centerY" id="XPz-Yi-vR4"/>
                         <constraint firstItem="1IS-A6-bgP" firstAttribute="height" secondItem="jjv-cd-8bw" secondAttribute="height" id="YB0-l5-wkv"/>
                         <constraint firstItem="1IS-A6-bgP" firstAttribute="centerY" secondItem="FlJ-dV-7Le" secondAttribute="centerY" id="aWQ-ZF-hxk"/>
                         <constraint firstItem="nzS-fK-vNd" firstAttribute="centerX" secondItem="1IS-A6-bgP" secondAttribute="centerX" id="gWl-DT-Ewr"/>
                         <constraint firstItem="jjv-cd-8bw" firstAttribute="top" secondItem="dDe-z1-Dg2" secondAttribute="top" id="iZh-im-rur"/>
-                        <constraint firstAttribute="bottom" secondItem="nzS-fK-vNd" secondAttribute="bottom" constant="88" id="kYf-pk-nYU"/>
                     </constraints>
                 </scrollView>
             </subviews>

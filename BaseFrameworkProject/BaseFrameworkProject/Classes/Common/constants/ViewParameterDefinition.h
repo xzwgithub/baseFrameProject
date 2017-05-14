@@ -70,14 +70,7 @@
 
 
 //----------------------通知KEY类---------------------------
-#define NOTICE_JSESSIONID_INVALID @"NOTICE_JSESSIONID_INVALID"//JSESSIONID失效
-#define NOTICE_REFRISH_MSG_NUMBER @"NOTICE_REFRISH_MSG_NUMBER"//刷新围堵消息数量
-#define NOTICE_RESAVE_PUSH @"NOTICE_RESAVE_PUSH"//收到远程推送
-
-#define NOTICE_QUOTATION_ORDER_CHNAGE @"NOTICE_QUOTATION_ORDER_CHNAGE"//订单或者报价单有变化
-//xzw
-#define LOGIN_SUCCESS @"LOGIN_SUCCESS"//
-#define NOTICE_ORDER_PRICE @"NOTICE_ORDER_PRICE"//订单待补价数量
-
+#define NOTICE_NAME_LOGOUT @"notice_name_logout"//注销通知
+#define NOTICE_NAME_BACKHOME @"notice_name_backhome"//回到登录界面
 
 #endif

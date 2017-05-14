@@ -13,6 +13,7 @@
 #import "YWNoDataBkView.h"
 #import "IQKeyboardManager.h"
 
+
 static const CGFloat kLabelFontSize = 18.f;
 static const CGFloat kMesageLabelFontSize = 17.f;
 @implementation LoadingView
@@ -117,22 +118,6 @@ static const CGFloat kMesageLabelFontSize = 17.f;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    //storyboard keng.die.de
-    if (self.navigationController.viewControllers.firstObject != self) {
-        [self.tabBarController.tabBar setHidden:YES];
-    }
-    self.isHindHud = NO;
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:self.navTitleColor?:ZDCL_NAV_TITLE,NSFontAttributeName:[UIFont systemFontOfSize:ZDFT_NAV_TITLE]};
-    self.navigationController.navigationBar.barTintColor = self.navBkColor?:ZDCL_NAV_BK;
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.clipsToBounds = self.isHindNavLin;
-    self.navigationController.navigationBar.hidden = self.isHindNav;
-//    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-//    self.navigationItem.backBarButtonItem = item;
-    // 禁用 iOS7 返回手势
-//    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-//        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-//    }
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -151,23 +136,17 @@ static const CGFloat kMesageLabelFontSize = 17.f;
     [super viewDidLoad];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-	// Do any additional setup after loading the view.
-    
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-//        UIBarButtonItem * backItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-//        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:ImageNamed(@"nav_icon_back.png") style:UIBarButtonItemStylePlain target:nil action:nil];
-//        self.navigationItem.backBarButtonItem = backItem;
-//       
-//        self.edgesForExtendedLayout = UIRectEdgeNone;
-//        
-//        self.extendedLayoutIncludesOpaqueBars = NO;
-//        self.modalPresentationCapturesStatusBarAppearance = NO;
-//        self.automaticallyAdjustsScrollViewInsets = NO;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+
     
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
+- (UIStatusBarStyle)preferredStatusBarStyle
+
+{
+    
     return UIStatusBarStyleLightContent;
+    
 }
 
 
@@ -498,7 +477,14 @@ static const CGFloat kMesageLabelFontSize = 17.f;
     }
 }
 
-
+-(LoginAccountManager *)loginAccountManager
+{
+    if (!_loginAccountManager) {
+        
+        _loginAccountManager = [LoginAccountManager shareAccountManager];
+    }
+    return _loginAccountManager;
+}
 
 
 @end

@@ -22,13 +22,10 @@
 #import "RegularCheckUtil.h"
 #import "AppConstants.h"
 #import "UIView+Frame.h"
+#import "LoginAccountManager.h"
 
 #define kLoginDoneNotification          @"kLoginDoneNotification"
 
-@class RangeModel;
-@class EnumerateModel;
-@class GoodsModel;
-@class AttachmentModel;
 
 typedef void (^RetryBlock)();
 
@@ -53,19 +50,8 @@ typedef void(^FailedErrorBlock)(id);
 @property (nonatomic, strong) UIView *failedTipView;
 @property (nonatomic, strong) UIView *noDataTipView;
 @property (nonatomic, strong) UIView *noDataWithoutButtonView;
-
-/**
- *  YW 添加
- */
-//导航左右Item字颜色
-@property (nonatomic, strong) UIColor *navItemColor;
-//导航栏 背景颜色
-@property (nonatomic, strong) UIColor *navBkColor;
-//导航栏 标题颜色
-@property (nonatomic, strong) UIColor *navTitleColor;
-//是否隐藏导航栏下面的线条（默认NO）
-@property (nonatomic, assign) BOOL isHindNavLin;
-@property (nonatomic, assign) BOOL isHindNav;
+//登录
+@property (nonatomic,strong) LoginAccountManager * loginAccountManager;
 
 
 - (AppDelegate *)appDelegate;

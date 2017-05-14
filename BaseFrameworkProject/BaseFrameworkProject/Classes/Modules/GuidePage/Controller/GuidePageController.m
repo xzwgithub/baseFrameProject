@@ -7,6 +7,8 @@
 //
 
 #import "GuidePageController.h"
+#import "ZWTabbarController.h"
+#import "LoginViewController.h"
 
 @interface GuidePageController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -27,8 +29,8 @@
 
 - (IBAction)clickBtn:(id)sender {
     
-    
-    
+    AppDelegate * delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    delegate.window.rootViewController = delegate.tabbar;
 }
 
 @end

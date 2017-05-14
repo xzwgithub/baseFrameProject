@@ -20,7 +20,7 @@
  *
  *  @param model 对应的实体
  */
-typedef void(^SuccesBlock)(id model, NSInteger totalSize);
+typedef void(^SuccesBlock)(id model);
 
 /**
  *  请求失败回调
