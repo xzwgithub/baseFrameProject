@@ -894,14 +894,14 @@
 		6C40D9D91EC5B82700E1FED5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6CE79D461EC6DAF200E1D02E /* Login */,
 				6CE79D2C1EC6C12100E1D02E /* One */,
 				6CE79D321EC6C12100E1D02E /* Two */,
 				6CE79D2F1EC6C12100E1D02E /* Three */,
 				6CE79D291EC6C12100E1D02E /* Four */,
+				6CF15D701EC5EC1D00C5BC16 /* GuidePage */,
+				6CE79D461EC6DAF200E1D02E /* Login */,
 				6CE79D1E1EC6C06800E1D02E /* Nav */,
 				6CE79D211EC6C06800E1D02E /* Tabbar */,
-				6CF15D701EC5EC1D00C5BC16 /* GuidePage */,
 			);
 			path = Modules;
 			sourceTree = "<group>";

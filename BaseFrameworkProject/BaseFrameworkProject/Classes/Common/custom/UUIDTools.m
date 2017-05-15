@@ -24,13 +24,9 @@
         
     {
         //生成一个uuid的方法
-        
         CFUUIDRef uuidRef = CFUUIDCreate(kCFAllocatorDefault);
-        
         strUUID = (NSString *)CFBridgingRelease(CFUUIDCreateString (kCFAllocatorDefault,uuidRef));
-        
         //将该uuid保存到keychain
-        
         [self save:KEY_USERNAME_PASSWORD data:strUUID];
         
     }

@@ -244,8 +244,8 @@ static NSArray *urlBlackList = nil;
     }
     
     if (useCache) {
-        NetworkCacheManager *netCacheManager = [NetworkCacheManager sharedManager];
         
+        NetworkCacheManager *netCacheManager = [NetworkCacheManager sharedManager];
         // 获取缓存数据
         NSString *result = [netCacheManager getRespWithURL:url requestBody:body];
         
@@ -301,8 +301,7 @@ static NSArray *urlBlackList = nil;
 
                      //SESSION失效的通知
                      if(RCODE_SESSION_INVALID == [codeNum integerValue]){
-                         [Utils showToastWihtMessage:@"当前帐号已在其他手机登录"]; //当前帐号已在其他手机登录，如果非您本人登录，请注意帐号安全
-                        // [[IMFLoginManager shareLoginManager] deletLoInUserModel];
+                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTICE_JSESSIONID_INVALID object:nil];
                      }
                      
                      if (successHandler) {

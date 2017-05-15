@@ -24,6 +24,7 @@
 
 @implementation LoginViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -32,7 +33,6 @@
     
 }
 - (IBAction)longin:(id)sender {
-    
     
     [self loginRequestWithUsername:self.userNameTF.text password:self.passwordTF.text];
     
@@ -51,14 +51,24 @@
         //保存登录成功信息
         [self.loginAccountManager saveLoginUserModel:userModel];
         
-        [UIApplication sharedApplication].keyWindow.rootViewController = [[ZWTabbarController alloc] init];
-               
+        //保存登录账号历史纪录
+        [self.loginAccountManager saveHistoryUserModels:userModel];
+        
+        //跳转tabbar控制器
+        [self.navigationController popViewControllerAnimated:YES];
+        
+
     } failure:^(NSInteger errorCode, NSString *errorDirections) {
         [self hideLoading];
         [Utils showToastWihtMessage:errorDirections];
         
     }];
     
+}
+
+-(void)dealloc
+{
+    NSLog(@"LoginViewController----dealloc");
 }
 
 

@@ -70,6 +70,7 @@
 
 
 //----------------------通知KEY类---------------------------
+#define NOTICE_JSESSIONID_INVALID @"notice_jsession_invalide"//jession失效通知
 #define NOTICE_NAME_LOGOUT @"notice_name_logout"//注销通知
 #define NOTICE_NAME_BACKHOME @"notice_name_backhome"//回到登录界面
 

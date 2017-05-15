@@ -55,23 +55,46 @@
     //添加子控制器
     [self setUpChildViewControllers];
     
+    //注册通知
     [self addNotice];
-    
     
     //自动登录请求
     [self autoLoginRequest];
 }
 
+
+//注册通知
 -(void)addNotice
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backHomePage) name:NOTICE_NAME_BACKHOME object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(jsessionInvalide) name:NOTICE_JSESSIONID_INVALID object:nil];
 }
 
+//jsession失效
+-(void)jsessionInvalide
+{
+    [Utils showToastWihtMessage:@"jsession失效"];
+    
+    //删除登录信息
+    [[LoginAccountManager shareAccountManager] deleteUserLoginInfo];
+    
+    //跳转登录界
+    if ([self isCurrentViewControllerVisible:[[LoginViewController alloc] init]]) return;
+    [self backHomePage];
+    
+}
+
+//判断UIViewController是否正在显示
+-(BOOL)isCurrentViewControllerVisible:(UIViewController *)viewController{
+    return (viewController.isViewLoaded && viewController.view.window);
+}
+
+
+//回到登录界面
 -(void)backHomePage
 {
-   
     [self setSelectedIndex:0];
-    [[self.viewControllers firstObject]  pushViewController:[[LoginViewController alloc]init] animated:NO];
+    [[self.viewControllers firstObject]  pushViewController:[[LoginViewController alloc] init] animated:NO];
 }
 
 -(void)dealloc
@@ -99,8 +122,6 @@
         [Utils showToastWihtMessage:errorDirections];
         
     }];
-
-    
 }
 
 
@@ -132,7 +153,7 @@
 
 }
 
-- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController NS_AVAILABLE_IOS(3_0)
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController 
 {
     ZWNavController * nav = (ZWNavController*)viewController;
     BaseViewController * vc = nav.viewControllers.firstObject;

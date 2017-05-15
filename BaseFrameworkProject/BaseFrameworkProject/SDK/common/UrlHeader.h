@@ -42,7 +42,10 @@
  */
 #define DURL_LOGIN_LOGOUT DROOTURL@"/logout/api/dlogout/logout.json"
 
-
+/**
+ *  获取更新条数
+ */
+#define DHOME_GET_STATISTIC_COUNT   DROOTURL@"/order/list/api/orderlist/getStatisticCount.json"
 
 
 #endif /* UrlHeader_h */
